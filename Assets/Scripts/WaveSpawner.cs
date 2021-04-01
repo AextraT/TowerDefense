@@ -11,11 +11,11 @@ public class WaveSpawner : MonoBehaviour
     private Transform spawnPoint;
 
     [SerializeField]
-    private float timeBetweenWaves = 5.5f;
+    private float timeBetweenWaves = 5f;
     [SerializeField]
     private float timeBetweenEnemies = 0.5f;
 
-    private float countdown = 2.5f;
+    private float countdown = 5f;
 
     [SerializeField]
     private Text waveCountdownTimer;
@@ -31,7 +31,8 @@ public class WaveSpawner : MonoBehaviour
         }
 
         countdown -= Time.deltaTime;
-        waveCountdownTimer.text = Mathf.Round(countdown).ToString();
+        countdown = Mathf.Clamp(countdown, 0, Mathf.Infinity);
+        waveCountdownTimer.text = string.Format("{0:00.00}", countdown);
     }
 
     IEnumerator SpawnWave()

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Turret : MonoBehaviour
+public class AnimatedTurret : MonoBehaviour
 {
     [SerializeField]
     private Transform target;
@@ -11,7 +11,6 @@ public class Turret : MonoBehaviour
     public Transform partToRotate;
     public Animator animator;
 
-    [SerializeField]
     private float turnSpeed = 5f;
 
     public float fireRate = 1f;
