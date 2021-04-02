@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8041453942591077124}
+  - component: {fileID: 3688795193248212395}
   - component: {fileID: 8041453942591077127}
   - component: {fileID: 5946718778972828109}
+  - component: {fileID: 1446394042}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -32,6 +34,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3688795193248212395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041453942591077126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d393d6954bf799944a98d127d20bf4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8041453942591077127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,7 +61,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 4777604056446581757, guid: 3fd8021baf069644d88d5d5f905fb3cb,
     type: 3}
   spawnPoint: {fileID: 0}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 10
   timeBetweenEnemies: 0.5
   waveCountdownTimer: {fileID: 0}
 --- !u!114 &5946718778972828109
@@ -66,3 +80,19 @@ MonoBehaviour:
     type: 3}
   cannonPrefab: {fileID: 4938804799156227359, guid: 5393150ae00c1154289b125a370d5696,
     type: 3}
+  buildEffect: {fileID: 960865893894778434, guid: 5c9d52e0602c8b746ac3d7660325cc9e,
+    type: 3}
+--- !u!114 &1446394042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041453942591077126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9888ee2428fedc44870c4812050c00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 200
+  startLives: 1
