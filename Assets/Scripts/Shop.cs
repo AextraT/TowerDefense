@@ -4,6 +4,7 @@ public class Shop : MonoBehaviour
 {
     public TurretBluePrint archer;
     public TurretBluePrint cannon;
+    public TurretBluePrint mage;
 
     private BuildManager buildManager;
 
@@ -22,5 +23,11 @@ public class Shop : MonoBehaviour
     {
         Debug.Log("Cannon sélectionné");
         buildManager.SelectTurretToBuild(cannon);
+    }
+
+    public void SelectMage()
+    {
+        Debug.Log("Mage sélectionné");
+        buildManager.SelectTurretToBuild(mage);
     }
 }

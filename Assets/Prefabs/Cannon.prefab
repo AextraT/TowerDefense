@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8273518324040957708}
-  - component: {fileID: 519183953}
+  - component: {fileID: 8901470711914785643}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -145,7 +145,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519183953
+--- !u!114 &8901470711914785643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,13 +154,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4938804799156227359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be363974253df454397dab817e95d554, type: 3}
+  m_Script: {fileID: 11500000, guid: 22e4796517778c5458a10d691755f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   range: 30
   enemyTag: Enemy
   partToRotate: {fileID: 2647428405433545825}
+  animator: {fileID: 0}
   fireRate: 0.5
   bulletPrefab: {fileID: 4625554773549840792, guid: ce1aee81d1c7e0b4dbf41312d4921a4e,
     type: 3}

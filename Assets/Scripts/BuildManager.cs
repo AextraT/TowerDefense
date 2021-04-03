@@ -16,9 +16,6 @@ public class BuildManager : MonoBehaviour
     }
     #endregion
 
-    public GameObject archerPrefab;
-    public GameObject cannonPrefab;
-
     public GameObject buildEffect;
 
     private TurretBluePrint turretToBuild;
