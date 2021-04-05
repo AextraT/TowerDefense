@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d393d6954bf799944a98d127d20bf4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
 --- !u!114 &8041453942591077127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,12 +77,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064c473c6cb023b44b151b674081c327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archerPrefab: {fileID: 2672172917571469158, guid: a37850225e877124aa510b96de7426b4,
-    type: 3}
-  cannonPrefab: {fileID: 4938804799156227359, guid: 5393150ae00c1154289b125a370d5696,
-    type: 3}
   buildEffect: {fileID: 960865893894778434, guid: 5c9d52e0602c8b746ac3d7660325cc9e,
     type: 3}
+  nodeUI: {fileID: 0}
 --- !u!114 &1446394042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,5 +92,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9888ee2428fedc44870c4812050c00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 200
+  startMoney: 9999
   startLives: 1

@@ -3,14 +3,19 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
-    private Color startColor;
-
     public Color hoverColor;
     public Color notEnoughMoneyColor;
 
     public Vector3 positionOffset;
 
+    [HideInInspector]
     public GameObject turret;
+    [HideInInspector]
+    public TurretBluePrint turretBluePrint;
+    [HideInInspector]
+    public bool isUpgraded = false;
+
+    private Color startColor;
     private Renderer rend;
 
     private BuildManager buildManager;
@@ -28,10 +33,66 @@ public class Node : MonoBehaviour
         return transform.position + positionOffset;
     }
 
+    public void UpgradeTurret()
+    {
+        if (isUpgraded)
+        {
+            Debug.Log("Tourelle déjà améliorée");
+            return;
+        }
+
+        if (PlayerStats.money < turretBluePrint.upgradeCost)
+        {
+            Debug.Log("Pas assez d'argent pour cela");
+            return;
+        }
+
+        PlayerStats.money -= turretBluePrint.upgradeCost;
+
+        Destroy(turret);
+
+        GameObject _turret = (GameObject)Instantiate(turretBluePrint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 1f);
+
+        isUpgraded = true;
+
+        Debug.Log("Tourelle améliorée");
+    }
+
+    private void BuildTurret(TurretBluePrint bluePrint)
+    {
+        if (PlayerStats.money < bluePrint.cost)
+        {
+            Debug.Log("Pas assez d'argent pour cela");
+            return;
+        }
+
+        PlayerStats.money -= bluePrint.cost;
+
+        turretBluePrint = bluePrint;
+
+        GameObject _turret = (GameObject)Instantiate(bluePrint.prefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 1f);
+
+        Debug.Log("Objet acheté");
+    }
+
     private void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject())
         {
+            return;
+        }
+
+        if (turret != null)
+        {
+            buildManager.SelectNode(this);
             return;
         }
 
@@ -40,13 +101,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if(turret != null)
-        {
-            Debug.Log("Impossible de construire, il y a déjà une tourelle");
-            return;
-        }
-
-        BuildManager.instance.BuildTurretOn(this);
+        BuildTurret(buildManager.GetTurretToBuild());
     }
 
     private void OnMouseEnter()
@@ -54,6 +109,11 @@ public class Node : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;
+        }
+
+        if (turret != null)
+        {
+            rend.material.color = hoverColor;
         }
 
         if (!buildManager.canBuild)
