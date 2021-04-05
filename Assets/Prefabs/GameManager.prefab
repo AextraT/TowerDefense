@@ -79,6 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildEffect: {fileID: 960865893894778434, guid: 5c9d52e0602c8b746ac3d7660325cc9e,
     type: 3}
+  sellEffect: {fileID: 6590494143960678244, guid: 0754ce9d82bc5d148b3ea39e8e582715,
+    type: 3}
   nodeUI: {fileID: 0}
 --- !u!114 &1446394042
 MonoBehaviour:
