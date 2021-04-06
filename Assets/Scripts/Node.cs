@@ -88,7 +88,7 @@ public class Node : MonoBehaviour
         PlayerStats.money += turretBluePrint.GetSellAmount();
 
         GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity);
-        Destroy(effect, 1f);
+        Destroy(effect, 2f);
 
         Destroy(turret);
         turretBluePrint = null;
