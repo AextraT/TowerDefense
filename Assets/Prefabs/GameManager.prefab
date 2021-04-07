@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8041453942591077127}
   - component: {fileID: 5946718778972828109}
   - component: {fileID: 1446394042}
+  - component: {fileID: 988524044}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -59,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21cb8472d14a3842b72033e078bd31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4777604056446581757, guid: 3fd8021baf069644d88d5d5f905fb3cb,
+  enemyPrefab: {fileID: 5192287660622690038, guid: bc393ea4bd9827b45a06f1f6dc60ddc0,
     type: 3}
   spawnPoint: {fileID: 0}
   timeBetweenWaves: 10
@@ -94,5 +95,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9888ee2428fedc44870c4812050c00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 9999
+  startMoney: 200
   startLives: 1
+--- !u!114 &988524044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041453942591077126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4995cb3cfbca7f43a117988664f26d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 0}
