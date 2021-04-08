@@ -13,10 +13,10 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown("l"))
+        /*if (Input.GetKeyDown("l"))
         {
             EndGame();
-        }
+        }*/
 
         if (gameIsOver)
         {

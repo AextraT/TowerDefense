@@ -3174,7 +3174,7 @@ GameObject:
   - component: {fileID: 1317347696}
   - component: {fileID: 1317347698}
   m_Layer: 5
-  m_Name: GameText
+  m_Name: GameTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3231,7 +3231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TOWER DEFENSE
+  m_Text: WAR ON GOBLINS
 --- !u!222 &1317347697
 CanvasRenderer:
   m_ObjectHideFlags: 0

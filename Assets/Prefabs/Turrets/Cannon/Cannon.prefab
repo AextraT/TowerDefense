@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 8273518324040957708}
   - component: {fileID: 8901470711914785643}
   m_Layer: 0
-  m_Name: Cannon_upgrade
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,10 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e4796517778c5458a10d691755f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 35
+  range: 25
   bulletPrefab: {fileID: 4625554773549840792, guid: ce1aee81d1c7e0b4dbf41312d4921a4e,
     type: 3}
-  fireRate: 0.7
+  fireRate: 0.5
   useLaser: 0
   damageOverTime: 30
   slowAmount: 0.5
@@ -241,7 +241,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8448425581331733787}
-  m_Mesh: {fileID: 2534964839176971238, guid: 55cd6c18050ad0044bbb2dbcd403b330, type: 3}
+  m_Mesh: {fileID: 2534964839176971238, guid: 239ae9fc68f234343bc39705b964c8c8, type: 3}
 --- !u!23 &1138954828508780811
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -262,7 +262,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -4973734387028869240, guid: 239ae9fc68f234343bc39705b964c8c8, type: 3}
-  - {fileID: -1444460858095362738, guid: 55cd6c18050ad0044bbb2dbcd403b330, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

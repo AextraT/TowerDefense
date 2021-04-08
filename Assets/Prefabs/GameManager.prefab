@@ -60,8 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21cb8472d14a3842b72033e078bd31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 5192287660622690038, guid: bc393ea4bd9827b45a06f1f6dc60ddc0,
-    type: 3}
+  waves: []
   spawnPoint: {fileID: 0}
   timeBetweenWaves: 10
   timeBetweenEnemies: 0.5
@@ -110,3 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 0}
+  sceneFader: {fileID: 0}
+  menuSceneName: MainMenu

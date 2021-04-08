@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2241587761025572711}
   - component: {fileID: 2876895243486748275}
   m_Layer: 0
-  m_Name: Arrow_upgrade
+  m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactEffect: {fileID: 0}
   speed: 50
-  damage: 75
+  damage: 30
   explosionRadius: 0
 --- !u!1 &9070977346464247634
 GameObject:
