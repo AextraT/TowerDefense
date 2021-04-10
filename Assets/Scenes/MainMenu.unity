@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128840fd7bb5f0f4b8cc275100a6c22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: MainScene
+  levelToLoad: LevelSelect
   sceneFader: {fileID: 754635233}
   settingsPanel: {fileID: 943758063}
 --- !u!4 &454879916

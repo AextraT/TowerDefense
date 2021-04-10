@@ -13,14 +13,13 @@ public class WaveSpawner : MonoBehaviour
 
     [SerializeField]
     private float timeBetweenWaves = 5f;
-    [SerializeField]
-    private float timeBetweenEnemies = 0.5f;
 
     private float countdown = 5f;
 
     [SerializeField]
     private Text waveCountdownTimer;
 
+    [SerializeField]
     private int waveIndex = 0;
 
     void Update()
@@ -48,16 +47,10 @@ public class WaveSpawner : MonoBehaviour
 
         Wave wave = waves[waveIndex];
 
-        for (int i = 0; i < wave.enemies.Length; i++)
+        for (int i = 0; i < wave.count; i++)
         {
-            Enemies enemies = wave.enemies[i];
-            for (int j = 0; j < enemies.count; j++)
-            {
-                SpawnEnemy(enemies.enemy);
-                yield return new WaitForSeconds(1f / enemies.rate);
-            }
-
-            yield return new WaitForSeconds(timeBetweenEnemies);
+            SpawnEnemy(wave.enemy);
+            yield return new WaitForSeconds(1f / wave.rate);
         }
 
         waveIndex++;

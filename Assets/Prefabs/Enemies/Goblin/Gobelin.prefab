@@ -1529,7 +1529,7 @@ MonoBehaviour:
   worth: 20
   canvas: {fileID: 5006784555580646632}
   partToRotate: {fileID: 775089615292578349}
-  deathEffect: {fileID: 3886330893664039670, guid: a3ed9640859dd7e48a16cb723b79ff21,
+  deathEffect: {fileID: 3886330893664039670, guid: 40d81b266a7ae6e4ba6350850bd3197f,
     type: 3}
   healthBar: {fileID: 7571610242283958494}
 --- !u!114 &647523700814252503

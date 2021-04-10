@@ -1,4 +1,14 @@
-- Sounds
+- Sounds:   - Archer shot v
+            - Cannon shot v
+            - Bullet explosion v
+            - Mage laser
+            - Enemies die
+            - Placement
+            - Amelioration
+            - Vente
+            - Perte d'une vie
 - Music
 - Main Menu
 - Chemins multiples
+- Affichage range
+- Objectifs

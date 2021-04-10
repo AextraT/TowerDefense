@@ -24735,6 +24735,10 @@ PrefabInstance:
       propertyPath: startLives
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1446394042, guid: 12c877ad04ffcd1489e515a748845e89, type: 3}
+      propertyPath: startMoney
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 3688795193248212395, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
       propertyPath: gameOverUI
@@ -24877,13 +24881,13 @@ PrefabInstance:
         type: 3}
       propertyPath: waves.Array.data[4].enemy
       value: 
-      objectReference: {fileID: 9158824121248154251, guid: 0722c979892c8e442814f99a379c8988,
+      objectReference: {fileID: 9103445859250062565, guid: 770907de72456864da79438128141311,
         type: 3}
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
       propertyPath: waves.Array.data[3].enemy
       value: 
-      objectReference: {fileID: 9103445859250062565, guid: 770907de72456864da79438128141311,
+      objectReference: {fileID: 9103445859250062565, guid: bc393ea4bd9827b45a06f1f6dc60ddc0,
         type: 3}
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
@@ -24913,27 +24917,27 @@ PrefabInstance:
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
       propertyPath: waves.Array.data[2].rate
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
       propertyPath: waves.Array.data[3].count
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
       propertyPath: waves.Array.data[3].rate
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
       propertyPath: waves.Array.data[4].count
-      value: 4
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
       propertyPath: waves.Array.data[4].rate
-      value: 0.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
         type: 3}
@@ -25130,6 +25134,38 @@ PrefabInstance:
         type: 3}
       propertyPath: waves.Array.data[6].timeBetweenEnemies
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
+        type: 3}
+      propertyPath: waves.Array.data[5].enemy
+      value: 
+      objectReference: {fileID: 9103445859250062565, guid: bc393ea4bd9827b45a06f1f6dc60ddc0,
+        type: 3}
+    - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
+        type: 3}
+      propertyPath: waves.Array.data[5].count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
+        type: 3}
+      propertyPath: waves.Array.data[5].rate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
+        type: 3}
+      propertyPath: waves.Array.data[6].enemy
+      value: 
+      objectReference: {fileID: 9158824121248154251, guid: 0722c979892c8e442814f99a379c8988,
+        type: 3}
+    - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
+        type: 3}
+      propertyPath: waves.Array.data[6].count
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041453942591077127, guid: 12c877ad04ffcd1489e515a748845e89,
+        type: 3}
+      propertyPath: waves.Array.data[6].rate
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12c877ad04ffcd1489e515a748845e89, type: 3}

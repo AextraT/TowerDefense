@@ -15,19 +15,16 @@ public class Shop : MonoBehaviour
 
     public void SelectArcher()
     {
-        Debug.Log("Archer sélectionné");
         buildManager.SelectTurretToBuild(archer);
     }
 
     public void SelectCannon()
     {
-        Debug.Log("Cannon sélectionné");
         buildManager.SelectTurretToBuild(cannon);
     }
 
     public void SelectMage()
     {
-        Debug.Log("Mage sélectionné");
         buildManager.SelectTurretToBuild(mage);
     }
 }

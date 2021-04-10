@@ -1526,7 +1526,7 @@ MonoBehaviour:
   startSpeed: 5
   speed: 10
   startHealth: 300
-  worth: 40
+  worth: 30
   canvas: {fileID: 4914814515504521862}
   partToRotate: {fileID: 832860419961191491}
   deathEffect: {fileID: 3886330893664039670, guid: a3ed9640859dd7e48a16cb723b79ff21,

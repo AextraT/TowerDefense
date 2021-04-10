@@ -5,6 +5,7 @@ public class Turret : MonoBehaviour
     [Header("General")]
 
     public float range = 15f;
+    public GameObject rangeCircle;
     private Transform target;
     private Enemy targetEnemy;
 
@@ -34,7 +35,8 @@ public class Turret : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("UpdateTarget", 0f, 0.5f);   
+        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        rangeCircle.transform.localScale = new Vector3(2 * range, 2 * range, 1);
     }
 
     void UpdateTarget()
