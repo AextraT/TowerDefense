@@ -6,6 +6,8 @@ public class Node : MonoBehaviour
     public Color hoverColor;
     public Color notEnoughMoneyColor;
 
+    private GameObject turretPreview;
+
     public Vector3 positionOffset;
 
     [HideInInspector]
@@ -114,6 +116,7 @@ public class Node : MonoBehaviour
         }
 
         BuildTurret(buildManager.GetTurretToBuild());
+        Destroy(turretPreview);
     }
 
     private void OnMouseEnter()
@@ -126,6 +129,7 @@ public class Node : MonoBehaviour
         if (turret != null)
         {
             rend.material.color = hoverColor;
+            return;
         }
 
         if (!buildManager.canBuild)
@@ -136,6 +140,16 @@ public class Node : MonoBehaviour
         if (buildManager.hasMoney)
         {
             rend.material.color = hoverColor;
+            turretPreview = (GameObject)Instantiate(buildManager.GetTurretToBuild().prefab, transform.position + positionOffset, transform.rotation);
+            Turret turretScript = turretPreview.GetComponent<Turret>();
+            if(turretScript.lineRenderer != null)
+            {
+                turretPreview.GetComponent<LineRenderer>().enabled = false;
+                turretScript.impactEffect.gameObject.SetActive(false);
+            }
+            turretScript.rangeCircle.transform.localScale = new Vector3(2 * turretScript.range, 2 * turretScript.range, 1);
+            turretScript.rangeCircle.SetActive(true);
+            turretScript.enabled = false;
         }
         else
         {
@@ -146,5 +160,6 @@ public class Node : MonoBehaviour
     private void OnMouseExit()
     {
         rend.material.color = startColor;
+        Destroy(turretPreview);
     }
 }
