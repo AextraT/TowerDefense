@@ -11,4 +11,8 @@
 - Main Menu
 - Chemins multiples
 - Affichage range v
+- Affichage quelle tourelle selectionnée
 - Objectifs
+- Scorpion
+- Catapulte
+- Mode infini
