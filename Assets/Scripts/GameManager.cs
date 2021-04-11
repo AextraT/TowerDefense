@@ -6,10 +6,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverUI;
 
-    public string levelSelectName = "LevelSelect";
-    public int levelToUnlock;
-
     public SceneFader sceneFader;
+
+    public GameObject completeLevelUI;
 
     private void Awake()
     {
@@ -42,11 +41,7 @@ public class GameManager : MonoBehaviour
 
     public void WinLevel()
     {
-        Debug.Log("TERMINE! BRAVO!");
-        if(levelToUnlock > PlayerPrefs.GetInt("levelReached", 1))
-        {
-            PlayerPrefs.SetInt("levelReached", levelToUnlock);
-        }
-        sceneFader.FadeTo(levelSelectName);
+        gameIsOver = true;
+        completeLevelUI.SetActive(true);
     }
 }

@@ -13,6 +13,6 @@
 - Affichage range v
 - Affichage quelle tourelle selectionnée
 - Objectifs
-- Scorpion
+- Scorpion v
 - Catapulte
 - Mode infini

@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e4796517778c5458a10d691755f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 16
+  range: 15
   rangeCircle: {fileID: 1617837919281003773}
   bulletPrefab: {fileID: 10532962589027951, guid: e2726357c0100c4439e6c8cd3aa06e2d,
     type: 3}

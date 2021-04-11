@@ -112,4 +112,4 @@ MonoBehaviour:
     type: 3}
   speed: 70
   damage: 60
-  explosionRadius: 7
+  explosionRadius: 5

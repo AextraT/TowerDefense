@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e4796517778c5458a10d691755f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 30
+  range: 18
   rangeCircle: {fileID: 7251181099420969936}
   bulletPrefab: {fileID: 4625554773549840792, guid: ce1aee81d1c7e0b4dbf41312d4921a4e,
     type: 3}
