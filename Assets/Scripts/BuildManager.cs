@@ -22,6 +22,8 @@ public class BuildManager : MonoBehaviour
     private TurretBluePrint turretToBuild;
     private Node selectedNode;
 
+    public Shop shop;
+
     public NodeUI nodeUI;
 
     public bool canBuild { get { return turretToBuild != null; } }
@@ -49,6 +51,7 @@ public class BuildManager : MonoBehaviour
 
         selectedNode = node;
         turretToBuild = null;
+        shop.DeselectAll();
 
         nodeUI.SetTarget(node);
     }
